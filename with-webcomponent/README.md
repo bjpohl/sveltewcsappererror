@@ -20,9 +20,7 @@ cd my-app/with-webcomponent
 npm install
 npm run dev
 ```
-
-Open up [localhost:3000/wc](http://localhost:3000/wc). If you browse to [localhost:3000/test](http://localhost:3000/test) the same web component does not throw error in console on static page. The error does not occur if you browse to the page after starting at index. (i.e. the issue seems to be only in SSR'd pages).
-
+If the route with the web component it, http://localhost:3000/wc, is the inital route, you will see the error in the console. If you browse to the route after initial load from another route, you will not see the error. However, every time you browse back to the route you will see the error again.
 
 
 ### src
